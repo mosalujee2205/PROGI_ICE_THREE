@@ -11,19 +11,18 @@ namespace ICETaskThree
         public double Radius { get; set; }
         public Circle(string name, double radius) : base(name)
         {
-            this.Radius = radius;
+            Radius = radius;
         }
         public double CalculateArea()
         {
-            return Math.PI * Math.Pow(Radius, 2);
+            return Math.PI * Radius * Radius;
         }
-        public void Display()
+        public override void Display()
         {
             base.Display();
             Console.WriteLine($"Radius: {Radius}");
             Console.WriteLine($"Area: {CalculateArea()}");
         }
-    }
+      }
 
-    }
-
+}

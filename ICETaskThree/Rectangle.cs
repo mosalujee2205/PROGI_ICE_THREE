@@ -12,14 +12,14 @@ namespace ICETaskThree
         public double Height { get; set; }
         public Rectangle(string name, double width, double height) : base(name)
         {
-            this.Width = width;
-            this.Height = height;
+            Width = width;
+            Height = height;
         }
         public double CalculateArea()
         {
             return Width * Height;
         }
-        public void Display()
+        public override void Display()
         {
             base.Display();
             Console.WriteLine($"Width: {Width}");
@@ -27,6 +27,6 @@ namespace ICETaskThree
             Console.WriteLine($"Area: {CalculateArea()}");
         }
     }
-    {
+    
     }
-}
+

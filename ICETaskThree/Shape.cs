@@ -12,10 +12,10 @@ namespace ICETaskThree
 
         public Shape(string name)
         {
-            this.Name = name;
+            Name = name;
         }
 
-        public void Display()
+        public virtual void Display()
         {
             Console.WriteLine($"Shape: {Name}");
         }
